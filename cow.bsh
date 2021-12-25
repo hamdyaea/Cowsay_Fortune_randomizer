@@ -1,0 +1,49 @@
+#!/usr/bin/bash
+# Developer : Hamdy Abou El Anein
+# hamdy.aea@protonmail.com
+# Need : fortune and cowsay 
+# yum install fortune
+# yum install cowsay
+# [-bdgpstwy] cowsay options
+
+randomize_cow () {
+    value=$(( RANDOM % 9 ))
+
+
+    case $value in
+
+    0)
+        fortune|cowsay -b
+    ;;
+
+    1)
+        fortune|cowsay -d
+    ;;
+ 
+    2)
+        fortune|cowsay -g
+    ;;
+    3)
+        fortune|cowsay -p
+    ;;
+    4)
+        fortune|cowsay -s
+    ;;
+    5)
+        fortune|cowsay -t
+    ;;
+    6)
+        fortune|cowsay -w
+    ;;
+    7)
+        fortune|cowsay -y
+    ;;
+    8)
+        fortune|cowsay -bdgpstwy  #All arguments :)
+    ;;
+    *)
+        STATEMENTS
+    ;;
+    esac
+}
+randomize_cow
