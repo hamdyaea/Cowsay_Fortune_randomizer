@@ -7,7 +7,7 @@
 # [-bdgpstwy] cowsay options
 
 randomize_cow () {
-    value=$(( RANDOM % 9 ))
+    value=$(( RANDOM % 10 ))
 
 
     case $value in
@@ -42,7 +42,7 @@ randomize_cow () {
         fortune|cowsay -bdgpstwy  #All arguments :)
     ;;
     *)
-        STATEMENTS
+        fortune|cowsay # basic
     ;;
     esac
 }
