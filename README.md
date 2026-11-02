@@ -15,3 +15,8 @@ Fortune + cowsay cow randomizer :)
 
 Developer : Hamdy Abou El Anein, hamdy.aea@protonmail.com
 
+
+
+## Maintenance
+
+Historical version preserved on the `old` branch. Modernization work is under review.
